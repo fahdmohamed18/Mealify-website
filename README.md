@@ -8,7 +8,7 @@ It’s designed for restaurants, cafés, and food businesses looking for a clean
 - Clean and modern design  
 - **Fully responsive layout** (mobile, tablet, and desktop)  
 - Sections: Home, About, Menu, Chefs, Contact  
-- Easy to customize and adapt to any food business
+- Easy to customize and adapt to any food business  
 
 ## 💻 Technologies Used
 
@@ -21,5 +21,5 @@ Mealify is fully responsive, ensuring the website looks great and works perfectl
 
 ## 🚀 Live Demo
 
-View Live: (https://your-github-username.github.io/mealify)  
+View Live: (https://fahdmohamed18.github.io/Mealify-website/))  
 
