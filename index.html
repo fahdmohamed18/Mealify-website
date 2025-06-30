@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    font-awesome    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!--    googleFonts    -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <!--    metaTags     -->
     <meta name="description" content="Mealify is a restaurant landing page that offers a delicious dining experience to its customers. Our menu is carefully crafted to satisfy diverse tastes and preferences, ranging from traditional to modern dishes.">
     <meta name="author" content="Fahd Mohamed">
     <link rel="icon" href="images/favicon.png">
     <title>Mealify</title>
+    <!--   cssLinks     -->
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
@@ -18,20 +22,22 @@
     <!-- === start Navbar === -->
     <div id="navbar">
         <div class="container">
+            <div class="nav">
             <div class="logo">
-                <h1><a href="index.html">Mealify<span>.</span></a></h1>
+                <a href="index.html">Mealify</a>
             </div>
             <ul class="nav-links">
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="#">Chefs</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="header-link" href="#header">Home</a></li>
+                <li><a class="chefs-link" href="#Chefs">Chefs</a></li>
+                <li><a class="gallery-link" href="#Gallery">Gallery</a></li>
+                <li><a class="contact-link" href="#contact">Contact</a></li>
             </ul>
 
             <div class="mood-container">
                 <label id="light" for="mood"><i class="fa-solid fa-moon"></i></label>
                 <label id="dark" for="mood"><i class="fa-solid fa-sun"></i></label>
                 <input type="checkbox" name="mood" id="mood" hidden>
+            </div>
             </div>
         </div>
     </div>
@@ -40,16 +46,23 @@
     <!-- === start Header section -->
     <div id="header" >
         <div class="container">
+            <div class="header-box">
             <div class="header-content">
-                <h2>Enjoy Your Healthy Delicious Food</h2>
+                <h2>Enjoy Your Healthy <br> Delicious Food</h2>
                 <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
-                <div class="btn">
-                    <a class="a1" href="">Book a table</a>
-                    <a class="a2" href="https://www.youtube.com"><div class="frame"><i class="fa-solid fa-play"></i></div> Watch a video</a>
+                <div class="header-buttons">
+                    <a class="book-btn" href="">Book a table</a>
+                    <div class="second-btn">
+                        <div class="icon">
+                            <i class="fa-solid fa-play"></i>
+                        </div>
+                        <a class="video-btn" href="https://www.youtube.com">Watch a video</a>
+                    </div>   
                 </div>
             </div>
             <div class="header-img">
                 <img src="images/hero-img.png" alt="head image">
+            </div>
             </div>
         </div>
     </div>
@@ -58,8 +71,8 @@
     <!-- === start Chefs section -->
     <div id="Chefs" class="padding-section">
         <div class="container">
-            <div class="chef-title">
-                <span>CHEFS</span>
+            <div class="main-title">
+                <p>CHEFS</p>
                 <h2>Our <span>Proffesional</span> Chefs</h2>
             </div>
             <div class="chef-items">
@@ -97,7 +110,7 @@
                 </div>
                 <div class="item">
                         <div class="inner">
-                                <img src="images/chef11.jpg" alt="chef one">
+                                <img src="images/chef33.jpg" alt="chef one">
                                 <ul class="layer">
                                     <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
                                     <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -119,8 +132,8 @@
     <!-- === start Gallery section -->
     <div id="Gallery" class="padding-section">
         <div class="container">
-            <div class="gallary-title">
-                <span>GALLERY</span>
+            <div class="main-title">
+                <p>GALLERY</p>
                 <h2>Check <span>Our Gallery</span></h2>
             </div>
             <div class="gallary-items">
@@ -195,8 +208,8 @@
     <!-- === start contact section -->
     <div id="contact" class="padding-section">
         <div class="container">
-            <div class="contact-title">
-                <span>CONTACT</span>
+            <div class="main-title">
+                <p>CONTACT</p>
                 <h2>Need Help ? <span> Contact Us</span></h2>
             </div>
             <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/personal-trackers/">Elderly trackers</a></iframe>
@@ -233,18 +246,23 @@
                 </div>
             </div>
             
-            <div class="input">
+            <div class="contact-form">
                 <form>
-                    <div class="input-arrow">
-                        <input class="input1" placeholder="Your Name" name="userName" type="text" required/>
-                        <input class="input2" placeholder="Your Email" name="userMail" type="email" required/>
+                    <div class="form-group">
+                    <div class="form-input">
+                        <input  placeholder="Your Name" name="userName" type="text" required/>
                     </div>
-                    <br/>
-                    <input class="input3" placeholder="Subject" name="userSubject" type="text" required/>
-                    <br/>
-                    <textarea class="input4" placeholder= "Message" required></textarea>
-                    <br/>
-                    <div class="but"><button class="input5">Send Message</button></div>
+                    <div class="form-input">
+                        <input placeholder="Your Email" name="userMail" type="email" required/>
+                    </div>
+                    </div>
+                    <div class="form-input">
+                    <input  placeholder="Subject" name="userSubject" type="text" required/>
+                    </div>
+                    <div class="form-input">
+                    <textarea  placeholder= "Message" required></textarea>
+                    </div>
+                    <button class="contact-btn">Send Message</button>
                 </form>
             </div>
         </div>
@@ -254,11 +272,10 @@
     <!-- === start footer section === -->
      <div id="footer" >
         <div class="container">
-
-            <div class="end1">
-
-                <div class="end1-head">
-                    <img src="images/favicon.png"/>
+            <div class="footer-box">
+            <div class="about">
+                <div class="about-title">
+                    <img src="images/favicon.png" alt="footer image"/>
                     <h2>Mealify</h2>
                 </div>
 
@@ -266,53 +283,48 @@
 
                 <h3>Social Media</h3>
 
-                <div class="line"></div>
-
-                <div class="endicons">
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                </div>
+                <ul>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
 
             </div>
 
-            <div class="end2">
+            <div class="subscribtion">
                 
                 <h3>Subscribe our Newsletter</h3>
                 <p> Don't miss out on our latest menu updates and exclusive offers - join our newsletter today and stay up-to-date with all things Mealify! </p>
-                <div class="box">
+
+                <div class="sub-group">
                 <input placeholder="Enter Your Email Adress" name="userMail" type="email" required/>
                 <button><i class="fa-solid fa-envelope"></i> Subscribe</button>
                 </div>
-                <h2>Quick Links</h2>
 
-                <div class="arrow-all">
-                    <div class="arrow">
-                        <a href=""><h4><i class="fa-solid fa-chevron-right"></i> Menu</h4></a>
-                        <a href=""><h4><i class="fa-solid fa-chevron-right"></i> About Us</h4></a>
-                        <a href=""><h4><i class="fa-solid fa-chevron-right"></i> Testimonial</h4></a>
-                    </div>
-    
-                    <div class="arrow">
-                        <a href=""><h4><i class="fa-solid fa-chevron-right"></i> Promo</h4></a>
-                        <a href=""><h4><i class="fa-solid fa-chevron-right"></i> Contact</h4></a>
-                        <a href=""><h4><i class="fa-solid fa-chevron-right"></i> Our Partner</h4></a>
-                    </div>
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href=""><h4><i class="fa-solid fa-chevron-right"></i> Menu</h4></a></li>
+                        <li><a href=""><h4><i class="fa-solid fa-chevron-right"></i> Promo</h4></a></li>
+                        <li><a href=""><h4><i class="fa-solid fa-chevron-right"></i> About Us</h4></a></li>
+                        <li><a href=""><h4><i class="fa-solid fa-chevron-right"></i> Contact</h4></a></li>
+                        <li><a href=""><h4><i class="fa-solid fa-chevron-right"></i> Testimonial</h4></a></li>
+                        <li><a href=""><h4><i class="fa-solid fa-chevron-right"></i> Our Partner</h4></a></li>
+                    </ul>
                 </div>
-
             </div>
 
-            <div class="end3">
+            <div class="contact-details">
                 <h3>Get in Touch</h3>
              
                 <ul class="fa-ul">
-                    <li><span class="fa-li"><i class="fa-solid fa-location-dot fa-xl" style="color: #ce1212;"></i></span>A108 Adam Street, New York, NY 535022</li>
-                    <li><span class="fa-li"><i class="fa-solid fa-envelope fa-xl" style="color: #ce1212;"></i></span>contact@example.com</li>
-                    <li><span class="fa-li"><i class="fa-solid fa-phone fa-xl" style="color: #ce1212;"></i></span>+1 5589 55488 55</li>
+                    <li><i class="fa-solid fa-location-dot" style="color: #ce1212;"></i><span>A108 Adam Street, New York</span></li>
+                    <li><i class="fa-solid fa-envelope" style="color: #ce1212;"></i><span>contact@example.com</span></li>
+                    <li><i class="fa-solid fa-phone" style="color: #ce1212;"></i><span>+1 5589 55488 55</span></li>
                 </ul>
             </div>
-
+            </div>
         </div>
     </div>
       <!-- === End footer section === -->
